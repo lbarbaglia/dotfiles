@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -89,6 +89,7 @@ plugins=(
   zsh-autosuggestions
   fast-syntax-highlighting
   zsh-completions
+  asdf
 )
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
@@ -125,9 +126,6 @@ export EDITOR='nvim'
 
 # From git plugin (duplicate with goto ssh manager)
 unalias gg
-
-# Add user bin to PATH
-export PATH=$PATH:/home/lbarbaglia/bin
 
 # Add golang to PATH
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
